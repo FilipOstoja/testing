@@ -1,0 +1,229 @@
+body, html {
+  height: 5000px;
+  margin: 0px;
+  font-family: Raleway, sans-serif;
+  background-color: black;
+}
+
+h1{
+  font-size: 75px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url(pictures/Bar-picture.jpg);
+  
+  /* Add the blur effect */
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  
+  /* Full height */
+  height: 50vmin; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 50%;
+  height: auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 30px;
+
+}
+@media (max-width: 850px) {
+  .bg-text{
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #f1f1f1;
+  height: auto;
+  width: auto;
+  }
+}
+button {
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-weight: 600;
+  margin: 0 10px;
+  width: 10vmin;
+  height: 7vmin;
+  padding: 10px 0;
+  box-shadow: 0 0 20px rgba(104, 85, 224, 0.2);
+  transition: 0.4s;
+  background-color: #201e21;
+}
+.log {
+  background: url(http://andrewch.eu/NIGHT/assets/images/logo/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  z-index: 2;
+  color: rgb(255, 255, 255);
+  background-color: transparent; /* Fallback color */
+  
+  font-size: 20px;
+  font-family: Raleway, sons-serif;
+}
+
+button:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: 0 0 20px rgba(255, 141, 12, 0.6);
+
+}
+.card-swiper{
+  margin-top: 100px;
+}
+.card-groups,
+.card-group,
+.card {
+  aspect-ratio: 5 / 7;
+}
+
+.card-groups,
+.card-group,
+.big-card {  
+  width: 30vmin;
+}
+
+.card-group {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  transition: transform 400ms ease;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  transition: transform 800ms cubic-bezier(.05,.43,.25,.95);
+  
+  background-position: center;
+  background-size: cover;
+}
+
+.big-card {
+  border-radius: 1vmin;
+  background-color: lightblue;
+}
+
+.little-card {
+  width: 12vmin;
+  border-radius: 2vmin;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: -1vmin 1vmin 2vmin rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+.big-card:nth-child(2){
+  background-image: url(https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+  transform: translateX(-10%) rotate(-1deg);
+  background-color: red;
+}
+.big-card:nth-child(4){
+  background-image: url(https://images.unsplash.com/photo-1598990034692-a57ccb6d03b8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1976&q=80);
+  transform: rotate(2deg);
+  background-color: blue;
+}
+.big-card:nth-child(6){
+  background-image: url(https://images.unsplash.com/photo-1571950006418-f226dc106482?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  transform: translateX(-6%) rotate(-3deg);
+}
+.big-card:nth-child(8){
+  background-image: url(https://images.unsplash.com/photo-1581927692308-be9e43b4d860?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+  transform: translateX(10%, 3%) rotate(5deg);
+}
+.little-card:nth-child(1){
+  background-image: url(https://images.unsplash.com/photo-1592483648228-b35146a4330c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80);
+}
+.little-card:nth-child(3){
+  background-image: url(https://images.unsplash.com/photo-1604321115296-f4b73745c7d9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+.little-card:nth-child(5){
+  background-image: url(https://images.unsplash.com/photo-1563223771-5fe4038fbfc9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80);
+}
+.little-card:nth-child(7){
+  background-image: url(https://images.unsplash.com/photo-1572590016064-3e6ae9c04947?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80);
+}
+.card-group:hover > .card {  
+  box-shadow: -2vmin 2vmin 3vmin rgba(0, 0, 0, 0.4);
+}
+
+.card-group:hover > .big-card:nth-child(2) {
+  transform: translate(-75%, 16%) rotate(-24deg);
+}
+
+.card-group:hover > .big-card:nth-child(4) {
+  transform: translate(-25%, 8%) rotate(-8deg);
+}
+
+.card-group:hover > .big-card:nth-child(6) {
+  transform: translate(25%, 8%) rotate(8deg);
+}
+
+.card-group:hover > .big-card:nth-child(8) {
+  transform: translate(75%, 16%) rotate(24deg);
+}
+.card-group:hover > .little-card:nth-child(1) {
+  transform: translate(200%, -160%) rotate(-15deg);
+}
+
+.card-group:hover > .little-card:nth-child(3) {
+  transform: translate(160%, 170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(5) {
+  transform: translate(-200%, -170%) rotate(15deg);
+}
+
+.card-group:hover > .little-card:nth-child(7) {
+  transform: translate(-280%, 140%) rotate(-15deg);
+}
+.hero-button{
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 13px 20px;
+  border-radius: 200px;
+  font-weight: bold;
+  background: rgb(255, 72, 0);
+  color:#fff;
+  cursor: pointer;
+  border: 2px solid rgb(255, 60, 0);
+  text-align: center;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 25vmin;
+  margin-top: 5vmin;
+
+}
+
+
+

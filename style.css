@@ -224,6 +224,37 @@ button:hover {
   margin-top: 5vmin;
 
 }
+.work-contact{
+text-transform: uppercase;
+font-size: 50px;
+text-align: center;
+margin-top: 25vmin;
+border: 2px solid #f1f1f1;
+color: white;
+width: auto;
+}
+.info{
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  margin-top: 3vmin;
+  word-wrap: break-word;
 
-
+}
+.contact-info{
+  display: flex;
+}
+.info-of-devs{
+  flex: 1;
+  padding: 1em;
+  border: 1px solid #f1f1f1;
+  color: white;
+  text-align: center;
+}
+@media screen and (max-width: 800px) {
+  .contact-info{
+    flex-direction: column;
+  }
+  
+}
 
